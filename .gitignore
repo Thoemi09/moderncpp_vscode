@@ -1,0 +1,26 @@
+# CLion generated directory
+.idea
+
+# QtCreator stuff
+*.user*
+*.autosave*
+
+# VS Code
+.vscode
+.devcontainer*
+cmake-variants.*
+
+# clangd
+.cache
+
+# build directories
+build*/
+
+# build instructions
+BUILD.txt
+
+# compile commands
+compile_commands.json
+
+# apple stuff
+*.dSYM
