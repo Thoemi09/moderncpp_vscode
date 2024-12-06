@@ -1,0 +1,182 @@
+{
+    // basic IDE settings
+    "editor.accessibilitySupport": "off",
+    "editor.hover.above": false,
+    "editor.minimap.enabled": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.scrollBeyondLastLine": false,
+    "editor.renderWhitespace": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.hotExit": "off",
+    "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        "*.in": "cmake",
+        ".clang-tidy": "yaml",
+        ".clang-format": "yaml",
+        ".clangd": "yaml"
+    },
+    "files.watcherExclude": {
+        "**/.cache": true,
+        "**/.dSYM": true,
+        "**/build*/**": true,
+        "**/docs*/**": true
+    },
+    "files.exclude": {
+        "**/.cache": true,
+        "**/.DS_Store": true,
+        "**/.dSYM": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/Thumbs.db": true
+    },
+    "search.exclude": {
+        "**/build*/**": true,
+        "**/docs*/**": true
+    },
+    "search.showLineNumbers": true,
+    "window.commandCenter": false,
+    "telemetry.telemetryLevel": "off",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#e788ff7c",
+        "editor.selectionHighlightBackground": "#ff00005b"
+    },
+    "explorer.confirmDelete": false,
+    "terminal.external.osxExec": "iTerm.app",
+
+    // debugger settings
+    "lldb.suppressUpdateNotifications": true,
+
+    // cmake settings
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    "cmake.buildDirectory": "${workspaceFolder}/build.${buildKitVendor}-${buildKitVersion}-${buildType}",
+    "cmake.copyCompileCommands": "${sourceDirectory}/compile_commands.json",
+    "cmake.installPrefix": "${workspaceFolder}/build.${buildKitVendor}-${buildKitVersion}-${buildType}/install",
+    "cmake.configureSettings": {
+        "CMAKE_VERBOSE_MAKEFILE": true
+    },
+    "cmake.options.statusBarVisibility": "compact",
+    "cmake.showOptionsMovedNotification": false,
+    "cmake.generator": "Unix Makefiles",
+    "cmake.additionalCompilerSearchDirs": [
+        "/opt/homebrew/opt/llvm/bin",
+        "/opt/homebrew/opt/gcc/bin"
+    ],
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+
+    // clangd settings
+    "clangd.path": "/opt/homebrew/opt/llvm/bin/clangd",
+    "clangd.arguments": [
+        "--header-insertion=never"
+    ],
+
+    // python settings
+    "python.defaultInterpreterPath": "/Users/thahn/.venv/py3_13/bin/python",
+
+    // git related settings
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.currentLine.pullRequests.enabled": false,
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.virtualRepositories.enabled": false,
+    "gitlens.home.preview.enabled": false,
+    "githubPullRequests.pullBranch": "never",
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.chat.scopeSelection": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "fortran.linter.compilerPath": "/opt/homebrew/bin/gfortran",
+    "fortran.fortls.path": "/opt/homebrew/bin/fortls",
+    "cSpell.userWords": [
+        "Allgather",
+        "Allgatherv",
+        "ASAN",
+        "BLAS",
+        "bosonic",
+        "bugprone",
+        "cofactors",
+        "constexpr",
+        "cout",
+        "ctzll",
+        "CUDA",
+        "cudart",
+        "DBUILD",
+        "DCMAKE",
+        "decltype",
+        "defgroup",
+        "Diagonalization",
+        "Dominik",
+        "DOPTION",
+        "dotc",
+        "Dumitrescu",
+        "eigen",
+        "elementwise",
+        "endcode",
+        "endl",
+        "fermionic",
+        "ffast",
+        "Frobenius",
+        "Gatherv",
+        "gelss",
+        "geqp",
+        "geqrf",
+        "gesvd",
+        "getrf",
+        "getri",
+        "getrs",
+        "ghactions",
+        "goolgetest",
+        "Hampel",
+        "heev",
+        "hermiticity",
+        "iostream",
+        "Iskakoff",
+        "itertools",
+        "Kiese",
+        "LAPACK",
+        "linktime",
+        "malloc",
+        "mathbf",
+        "mathrm",
+        "memcpy",
+        "memset",
+        "Menke",
+        "MSAN",
+        "numpy",
+        "openmp",
+        "openmpi",
+        "orgqr",
+        "ostream",
+        "Parcollet",
+        "Philipp",
+        "rvalues",
+        "scal",
+        "Scatterv",
+        "scipy",
+        "Simons",
+        "strided",
+        "structs",
+        "subdiagonal",
+        "subproject",
+        "superdiagonal",
+        "syev",
+        "tparam",
+        "tridiagonal",
+        "TRIQS",
+        "TSAN",
+        "ubsan",
+        "ungqr",
+        "Wentzell",
+        "Wunused"
+    ]
+}

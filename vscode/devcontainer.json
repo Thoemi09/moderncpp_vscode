@@ -1,0 +1,99 @@
+{
+    "image": "moderncpp:vscode",
+    "name": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd",
+                "ms-vscode.cmake-tools",
+                "twxs.cmake",
+                "vadimcn.vscode-lldb",
+                "ms-python.python",
+                "kevinkyang.auto-comment-blocks"
+            ],
+            "settings": {
+                // basic IDE settings
+                "editor.accessibilitySupport": "off",
+                "editor.hover.above": false,
+                "editor.minimap.enabled": false,
+                "editor.inlayHints.enabled": "offUnlessPressed",
+                "editor.scrollBeyondLastLine": false,
+                "editor.renderWhitespace": "none",
+                "diffEditor.ignoreTrimWhitespace": false,
+                "files.hotExit": "off",
+                "files.trimTrailingWhitespace": true,
+                "files.associations": {
+                    "*.in": "cmake",
+                    ".clang-tidy": "yaml",
+                    ".clang-format": "yaml",
+                    ".clangd": "yaml"
+                },
+                "files.watcherExclude": {
+                    "**/.cache": true,
+                    "**/.dSYM": true,
+                    "**/build*/**": true,
+                    "**/docs*/**": true
+                },
+                "files.exclude": {
+                    "**/.cache": true,
+                    "**/.DS_Store": true,
+                    "**/.dSYM": true,
+                    "**/.git": true,
+                    "**/.hg": true,
+                    "**/.svn": true,
+                    "**/CVS": true,
+                    "**/Thumbs.db": true
+                },
+                "search.exclude": {
+                    "**/build*/**": true,
+                    "**/docs*/**": true
+                },
+                "search.showLineNumbers": true,
+                "window.commandCenter": false,
+                "telemetry.telemetryLevel": "off",
+                "workbench.colorCustomizations": {
+                    "editor.selectionBackground": "#e788ff7c",
+                    "editor.selectionHighlightBackground": "#ff00005b"
+                },
+                "explorer.confirmDelete": false,
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "/bin/bash"
+                    }
+                },
+
+                // debugger settings
+                "lldb.suppressUpdateNotifications": true,
+
+                // cmake settings
+                "cmake.configureOnOpen": false,
+                "cmake.configureOnEdit": false,
+                "cmake.buildDirectory": "${workspaceFolder}/build.devcont.${buildKitVendor}-${buildKitVersion}-${buildType}",
+                "cmake.copyCompileCommands": "${sourceDirectory}/compile_commands.json",
+                "cmake.installPrefix": "${workspaceFolder}/build.devcont.${buildKitVendor}-${buildKitVersion}-${buildType}/install",
+                "cmake.configureSettings": {
+                    "CMAKE_VERBOSE_MAKEFILE": true
+                },
+                "cmake.options.statusBarVisibility": "compact",
+                "cmake.showOptionsMovedNotification": false,
+                "cmake.generator": "Unix Makefiles",
+                "cmake.pinnedCommands": [
+                    "workbench.action.tasks.configureTaskRunner",
+                    "workbench.action.tasks.runTask"
+                ],
+
+                // clangd settings
+                "clangd.path": "/usr/bin/clangd-18",
+                "clangd.arguments": [
+                    "--header-insertion=never"
+                ]
+            }
+        }
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/thahn/moderncpp_vscode,type=bind",
+    "workspaceFolder": "/home/thahn/moderncpp_vscode",
+    "features": {
+        "ghcr.io/hwaien/devcontainer-features/match-host-time-zone:0": {}
+    }
+}

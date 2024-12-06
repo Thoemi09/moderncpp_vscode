@@ -1,0 +1,15 @@
+{
+    // local settings
+    "cmake.sourceDirectory": "/Users/thahn/repos/modernc++/vscode/moderncpp_vscode.src",
+    "cmake.configureEnvironment": {
+        // link to llvm's libc++ when compiling with clang++
+        "LDFLAGS": "-L/opt/homebrew/opt/llvm/lib/c++ -L/opt/homebrew/opt/llvm/lib/unwind -lunwind"
+
+        // use the old linker and old SDK when compiling with g++
+        // "LDFLAGS": "-ld_classic",
+        // "SDKROOT": "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk"
+    }
+
+    // dev container settings
+    // "cmake.sourceDirectory": "/home/thahn/moderncpp_vscode/moderncpp_vscode.src"
+}
