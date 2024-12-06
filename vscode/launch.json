@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug-ex1",
+            "program": "${workspaceFolder}/build.Clang-19.1.2-Debug/examples/ex1",
+            "args": [],
+            "cwd": "${workspaceFolder}/build.Clang-19.1.2-Debug/examples"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug-ex2",
+            "program": "${workspaceFolder}/build.Clang-19.1.2-Debug/examples/ex2",
+            "args": [],
+            "cwd": "${workspaceFolder}/build.Clang-19.1.2-Debug/examples"
+        }
+    ]
+}
