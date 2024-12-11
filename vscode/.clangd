@@ -1,0 +1,6 @@
+Diagnostics:
+    UnusedIncludes: Strict
+    # Includes:
+    #     IgnoreHeader:
+    #         - concepts
+    #         - .*/stdutil/complex\.hpp
